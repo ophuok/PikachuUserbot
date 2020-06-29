@@ -3,6 +3,7 @@ Fix by @mariodevs
 '''
 import os
 import sys
+from pymongo import MongoClient
 from telethon.sessions import StringSession
 from telethon import TelegramClient
 
