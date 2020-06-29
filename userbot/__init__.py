@@ -85,6 +85,9 @@ if bool(ENV):
     # remove.bg API key
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
 
+    # Mongo 
+    MONGO_URI = os.environ.get("MONGO_URI", "")
+    
     # Chrome Driver and Headless Google Chrome Binaries
     CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
     GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
