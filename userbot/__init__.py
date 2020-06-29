@@ -148,7 +148,32 @@ if bool(ENV):
                                       password_hash=LASTFM_PASS)
     else:
         lastfm = None
+        
+    # Init Mongo
+    MONGOCLIENT = MongoClient(Config.MONGO_URI, 27017, serverSelectionTimeoutMS=1)
+    MONGO = MONGOCLIENT.userbot
 
+
+def is_mongo_alive():
+    try:
+        MONGOCLIENT.server_info()
+    except BaseException:
+        return False
+    return True
+
+
+   # Init Redis
+   # Redis will be hosted inside the docker container that hosts the bot
+   # We need redis for just caching, so we just leave it to non-persistent
+   REDIS = StrictRedis(host='localhost', port=6379, db=0)
+
+
+def is_redis_alive():
+    try:
+        REDIS.ping()
+        return True
+    except BaseException:
+        return False
     # Google Drive Module
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
