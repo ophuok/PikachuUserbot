@@ -1,5 +1,8 @@
  
 import os
+from pymongo import MongoClient
+import pymongo
+
 from telethon.tl.types import ChatBannedRights
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
