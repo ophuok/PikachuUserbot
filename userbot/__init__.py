@@ -151,7 +151,7 @@ if bool(ENV):
         lastfm = None
         
     # Init Mongo
-    MONGOCLIENT = MongoClient(Config.MONGO_URI, 27017, serverSelectionTimeoutMS=1)
+    MONGOCLIENT = MongoClient(Var.MONGO_URI, 27017, serverSelectionTimeoutMS=1)
     MONGO = MONGOCLIENT.userbot
 
 
