@@ -168,7 +168,7 @@ def is_mongo_alive():
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY",
                                          "./downloads")
-else:
+    else:
     # Put your ppe vars here if you are using local hosting
     PLACEHOLDER = None
 
