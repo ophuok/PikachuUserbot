@@ -58,5 +58,5 @@ urbandict>=0.5
 wikipedia>=1.4.0
 youtube-dl
 covid
-
+pip>=20.1.1
 
