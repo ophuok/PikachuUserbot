@@ -9,7 +9,7 @@ from telethon import TelegramClient
 
 from var import Var
 
-os.system("pip install --upgrade pip")
+os.system("os.system("pip install --upgrade pip && python -m spacy download en_core_web_sm")")
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
