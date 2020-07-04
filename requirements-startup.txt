@@ -41,7 +41,7 @@ pylast
 pymongo
 python-barcode
 python-dotenv
-pyyaml==5.2
+pyyaml==5.1
 python-magic
 pytube
 pytz
@@ -54,7 +54,7 @@ requests>=2.18.4
 search-engine-parser>=0.4.2
 selenium
 speedtest-cli>=2.0.2
-sqlalchemy>=1.2
+sqlalchemy==1.2
 telegraph
 urbandict>=0.5
 wikipedia>=1.4.0
