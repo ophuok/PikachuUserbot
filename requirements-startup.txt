@@ -9,7 +9,7 @@ bs4
 bwb==3.0.0
 cfscrape
 chatterbot
-chatterbot_corpus>=1.2.0
+chatterbot_corpus
 coffeehouse
 cowpy
 cryptg
@@ -41,7 +41,7 @@ pylast
 pymongo
 python-barcode
 python-dotenv
-pyyaml==5.1
+pyyaml
 python-magic
 pytube
 pytz
@@ -54,7 +54,7 @@ requests>=2.18.4
 search-engine-parser>=0.4.2
 selenium
 speedtest-cli>=2.0.2
-sqlalchemy==1.2
+sqlalchemy
 telegraph
 urbandict>=0.5
 wikipedia>=1.4.0
