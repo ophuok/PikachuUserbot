@@ -71,6 +71,11 @@ if bool(ENV):
     BOTLOG = sb(os.environ.get("BOTLOG", "False"))
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
     
+    # Autopic
+    AUTOPIC_COMMENT = os.environ.get("AUTOPIC_COMMENT", "")
+    AUTOPIC_FONT_COLOUR = os.environ.get("AUTOPIC_FONT_COLOUR", "")
+    AUTOPIC_FONT = os.environ.get("AUTOPIC_FONT", "")
+
     # Bleep Blop, this is a bot ;)
     PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
