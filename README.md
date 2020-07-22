@@ -17,7 +17,7 @@ Best User Bot To Manage Your Telegram Account
 ## Installing Heroku 
 
 ### The Easy Way
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/StarkGang/fridayuserbot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ItzSjDude/PikachuUserbot)
 
 ## GET STRING SESSION FROM REPL RUN 
 
@@ -27,8 +27,8 @@ Best User Bot To Manage Your Telegram Account
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/starkGang/Fridayuserbot
-cd FridayUserbot
+git clone https://github.com/ItzSjDude/PikachuUserbot
+cd PikachuUserbot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
