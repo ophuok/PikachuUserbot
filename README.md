@@ -1,4 +1,4 @@
-# FRIDAY
+# Pikachu Userbot 
 
 <p align="center">
 <img src="pikachu.png" alt="PIKACHU USERBOT">
