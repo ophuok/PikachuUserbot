@@ -1,7 +1,7 @@
 # Pikachu Userbot 
 
 <p align="center">
-<img src="pikachu.png" alt="PIKACHU USERBOT">
+<img src="Pikachu.png" alt="PIKACHU USERBOT">
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
