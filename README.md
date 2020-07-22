@@ -1,7 +1,7 @@
 # FRIDAY
 
 <p align="center">
-<img src="friday.png" alt="PIKACHU USERBOT">
+<img src="pikachu.png" alt="PIKACHU USERBOT">
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
