@@ -10,6 +10,8 @@ from userbot import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
 import telethon.utils
+chat = "@cbkhs"
+
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
@@ -50,7 +52,6 @@ for name in files:
 print("Importing Plugins Database...")
 
 async def a():
-    chat = "@cbkhs"
     itzsjdude1 = await bot.get_messages(chat, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo = itzsjdude1[ixo].id ; await client.download_media(await borg.get_messages(chat, ids=mxo), "./userbot")
