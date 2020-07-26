@@ -48,17 +48,13 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 print("Importing Plugins Database...")
-borg = bot
-async def install(event):
-    chat ="@cbkhs"
-    documentss = await borg.get_messages(chat, None , filter=InputMessagesFilterDocument)
-    total = int(documentss.total)
-    total_doxx = range(0, total)
-    await event.delete()
-    for ixo in total_doxx:
-        mxo = documentss[ixo].id
-        downloaded_file_name = await event.client.download_media(await borg.get_messages(chat, ids=mxo), "userbot")
 
+async def a():
+    chat ="@cbkhs"
+    itzsjdude1 = await bot.get_messages(chat, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude1.total) ; total_doxx = range(0, total)
+    for ixo in total_doxx:
+        mxo = itzsjdude1[ixo].id ; await client.download_media(await borg.get_messages(chat, ids=mxo), "userbot")
+        
 print("Imported Plugins Database Sucessfully")
 
 import userbot._core
