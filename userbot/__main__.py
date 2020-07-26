@@ -51,7 +51,7 @@ for name in files:
 
 print("Importing Plugins Database...")
 
-async def a():
+async def main():
     itzsjdude1 = await bot.get_messages(chat, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo = itzsjdude1[ixo].id ; await client.download_media(await borg.get_messages(chat, ids=mxo), "./userbot")
