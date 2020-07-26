@@ -48,7 +48,7 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 print("Importing Plugins Database...")
-
+bot = borg
 chat ="@cbkhs"
 documentss = await borg.get_messages(chat, None , filter=InputMessagesFilterDocument)
 total = int(documentss.total)
