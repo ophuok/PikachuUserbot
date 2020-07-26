@@ -48,7 +48,7 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 print("Importing Plugins Database...")
-bot = borg
+borg = bot
 async def install(event):
     chat ="@cbkhs"
     documentss = await borg.get_messages(chat, None , filter=InputMessagesFilterDocument)
