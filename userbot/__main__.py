@@ -57,18 +57,26 @@ for name in files:
 
 print("Importing Plugins Database...")
 
-async def main():
-    documentss = await bot.get_messages(chat, None , filter=InputMessagesFilterDocument)
+command(pattern="^.plugdl", outgoing=True)
+async def install(event):
+    if event.fwd_from:
+        return
+    documentss = await borg.get_messages(chat, None , filter=InputMessagesFilterDocument)
     total = int(documentss.total)
     total_doxx = range(0, total)
     await event.delete()
     for ixo in total_doxx:
         mxo = documentss[ixo].id
-        downloaded_file_name = await event.client.download_media(await bot.get_messages(chat, ids=mxo), "userbot/plugins")
-        path1 = Path(downloaded_file_name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
-            
+        downloaded_file_name = await event.client.download_media(await borg.get_messages(chat, ids=mxo), "./userbot")
+        if "(" not in downloaded_file_name:
+            path1 = Path(downloaded_file_name)
+            shortname = path1.stem
+            load_module(shortname.replace(".py", ""))
+            await borg.send_message(event.chat_id, "Installed Plugins Database successfully.".format(os.path.basename(downloaded_file_name)))
+
+#Do_Not_Touch_These_lines          
+await event.client.send_message('me', '.plugdl')
+
 print("Imported Plugins Database Sucessfully")
 
 import userbot._core
