@@ -54,16 +54,6 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-
-import glob
-path = 'userbot/*.py'
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
-
 print("Importing Plugins Database...")
 #Do_Not_Touch_These_lines
 
