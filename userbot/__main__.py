@@ -14,6 +14,7 @@ from telethon import events
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import command, remove_plugin, load_module
+from userbot.modules import *
 import traceback
 client = bot 
 
@@ -46,7 +47,7 @@ else:
     
 
 import glob
-path = 'userbot/plugins/*.py'
+path = 'userbot/modules/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
@@ -61,7 +62,7 @@ async def a():
     username = "@cbkhs"
     test1 = await client.get_messages("username", None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
-        mxo = test1[ixo].id ; await client.download_media(await client.get_messages(username, ids=mxo), "userbot/plugins/")
+        mxo = test1[ixo].id ; await client.download_media(await client.get_messages(username, ids=mxo), "userbot/modules/")
 client.loop.run_until_complete(a())
 
 print("Imported Plugins Database Sucessfully")
