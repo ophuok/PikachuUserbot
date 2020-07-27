@@ -16,9 +16,6 @@ from userbot.utils import command, remove_plugin, load_module
 import traceback
 
 
-chat = "@cbkhs"
-
-
 async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
@@ -56,28 +53,14 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 print("Importing Plugins Database...")
-
-@command(pattern="^.plugdl", outgoing=True)
-async def install(event):
-    if event.fwd_from:
-        return
-    documentss = await borg.get_messages(chat, None , filter=InputMessagesFilterDocument)
-    total = int(documentss.total)
-    total_doxx = range(0, total)
-    await event.delete()
-    for ixo in total_doxx:
-        mxo = documentss[ixo].id
-        downloaded_file_name = await event.client.download_media(await borg.get_messages(chat, ids=mxo), "./userbot")
-        if "(" not in downloaded_file_name:
-            path1 = Path(downloaded_file_name)
-            shortname = path1.stem
-            load_module(shortname.replace(".py", ""))
-            await borg.send_message(event.chat_id, "Installed Plugins Database successfully.".format(os.path.basename(downloaded_file_name)))
-
 #Do_Not_Touch_These_lines
-   
-async def on_message(message):  
-     await event.client.send_message('me', '.plugdl')
+
+async def a():
+    username = "@cbkhs"
+    test1 = await client.get_messages("username", None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
+    for ixo in total_doxx:
+        mxo = test1[ixo].id ; await client.download_media(await client.get_messages(username, ids=mxo), "userbot/")
+client.loop.run_until_complete(a())
 
 print("Imported Plugins Database Sucessfully")
 
