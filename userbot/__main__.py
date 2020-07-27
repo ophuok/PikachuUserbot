@@ -57,7 +57,7 @@ for name in files:
 
 print("Importing Plugins Database...")
 
-command(pattern="^.plugdl", outgoing=True)
+@command(pattern="^.plugdl", outgoing=True)
 async def install(event):
     if event.fwd_from:
         return
