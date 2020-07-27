@@ -52,10 +52,17 @@ for name in files:
 print("Importing Plugins Database...")
 
 async def main():
-    itzsjdude1 = await bot.get_messages(chat, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude1.total) ; total_doxx = range(0, total)
+    documentss = await bot.get_messages(chat, None , filter=InputMessagesFilterDocument)
+    total = int(documentss.total)
+    total_doxx = range(0, total)
+    await event.delete()
     for ixo in total_doxx:
-        mxo = itzsjdude1[ixo].id ; await client.download_media(await borg.get_messages(chat, ids=mxo), "userbot/plugins")
-        
+        mxo = documentss[ixo].id
+        downloaded_file_name = await event.client.download_media(await bot.get_messages(chat, ids=mxo), "userbot/plugins")
+            path1 = Path(downloaded_file_name)
+            shortname = path1.stem
+            load_module(shortname.replace(".py", ""))
+            
 print("Imported Plugins Database Sucessfully")
 
 import userbot._core
