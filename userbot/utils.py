@@ -2,6 +2,8 @@ from userbot import bot
 from telethon import events
 from var import Var
 from pathlib import Path
+from telethon.tl.types import InputMessagesFilterDocument
+import traceback
 from userbot.uniborgConfig import Config
 from userbot import LOAD_PLUG
 from userbot import CMD_LIST
