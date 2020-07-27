@@ -74,8 +74,10 @@ async def install(event):
             load_module(shortname.replace(".py", ""))
             await borg.send_message(event.chat_id, "Installed Plugins Database successfully.".format(os.path.basename(downloaded_file_name)))
 
-#Do_Not_Touch_These_lines          
-await event.client.send_message('me', '.plugdl')
+#Do_Not_Touch_These_lines
+   
+async def on_message(message):  
+     await event.client.send_message('me', '.plugdl')
 
 print("Imported Plugins Database Sucessfully")
 
