@@ -15,7 +15,6 @@ from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import command, remove_plugin, load_module
 import traceback
-from userbot import bot 
 
 
 async def add_bot(bot_token):
