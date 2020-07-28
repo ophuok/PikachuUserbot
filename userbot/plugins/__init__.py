@@ -1,17 +1,17 @@
 from userbot import LOGS
 
-def __list_all_modules():
+def __list_all_plugins():
     from os.path import dirname, basename, isfile
     import glob
 
     mod_paths = glob.glob(dirname(__file__) + "/*.py")
-    all_modules = [
+    all_plugins = [
         basename(f)[:-3] for f in mod_paths
         if isfile(f) and f.endswith(".py") and not f.endswith("__init__.py")
     ]
-    return all_modules
+    return all_plugins
 
 
-ALL_MODULES = sorted(__list_all_modules())
-LOGS.info("Loading modules please wait.......")
-__all__ = ALL_MODULES + ["ALL_MODULES"]
+ALL_PLUGINS = sorted(__list_all_plugins())
+LOGS.info("Loading plugins please wait.......")
+__all__ = ALL_PLUGINS + ["ALL_PLUGINS"]
