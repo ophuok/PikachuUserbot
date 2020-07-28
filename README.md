@@ -22,6 +22,7 @@ Best User Bot To Manage Your Telegram Account
 **2.Click on** [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ItzSjDude/PikachuUserbot)
  
 **3.Fill up required fields like Appid,Api hash, String Sesson , Bot token nd Bot username**
+
 **4.Hola! Click on deploy now nd wait for 5-10mins**
 
 ## GET STRING SESSION FROM REPL RUN 
