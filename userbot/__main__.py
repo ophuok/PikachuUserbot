@@ -59,7 +59,6 @@ async def plug():
     itzsjdude = await bot.get_messages(username, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo = itzsjdude[ixo].id ; await client.download_media(await bot.get_messages(username, ids=mxo), "userbot/")
-        bot.connect()
         
 bot.loop.run_until_complete(plug())
 
