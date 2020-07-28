@@ -15,8 +15,7 @@ from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import command, remove_plugin, load_module
 from userbot.plugins import *
-import traceback
-client = bot 
+import traceback 
 
 
 async def add_bot(bot_token):
@@ -48,11 +47,11 @@ else:
 
 async def a():
     username = "@cbkhs"
-    test1 = await client.get_messages(username, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
+    test1 = await borg.get_messages(username, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
-        mxo = test1[ixo].id ; await client.download_media(await client.get_messages(username, ids=mxo), "userbot/modules/")
-        client.connect()
-        client.loop.run_until_complete(a())
+        mxo = test1[ixo].id ; await client.download_media(await borg.get_messages(username, ids=mxo), "userbot/modules/")
+        bot.connect()
+        bot.loop.run_until_complete(a())
 
 
 import glob
