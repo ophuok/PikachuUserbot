@@ -35,10 +35,11 @@
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
     },
-    "AUTH_TOKEN_DATA"
+    "AUTH_TOKEN_DATA" {
       "discription": "Required for Userbot to run."
       "value": "ItzSjDude"
       "required": false
+    },
     "REM_BG_API_KEY": {
       "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
       "value": "",
