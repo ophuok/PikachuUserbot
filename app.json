@@ -28,13 +28,17 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @Mariodevs.",
+      "description": "Fill your Full name or Username like @itzsjdude.",
       "value": ""
     },
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
     },
+    "AUTH_TOKEN_DATA"
+      "discription": "Required for Userbot to run."
+      "value": "ItzSjDude"
+      "required": false
     "REM_BG_API_KEY": {
       "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
       "value": "",
@@ -58,7 +62,7 @@
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "Get this value from https://fridayuserbot.midhunkm1294bit.repl.run",
+      "description": "Get this value from https://Userbot.itzsjdude.repl.run",
       "value": ""
     },
     "GITHUB_ACCESS_TOKEN": {
