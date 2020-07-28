@@ -17,11 +17,15 @@ Best User Bot To Manage Your Telegram Account
 ## Installing Heroku 
 
 ### The Easy Way
+• Generate String session from Repl.run 
+• Click on Deploy to Heroku 
+• Fill up required fields like Appid,Api hash, String Sesson , Bot token nd Bot username 
+• Hola! Click on deploy now nd wait for 5-10mins 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ItzSjDude/PikachuUserbot)
 
 ## GET STRING SESSION FROM REPL RUN 
 
-[![Repl.it](https://img.shields.io/badge/REPL%20RUN-Run%20Online-blue.svg)](https://friday.starkgang.repl.run)
+[![Repl.it](https://img.shields.io/badge/REPL%20RUN-Run%20Online-blue.svg)](http://userbot.itzsjdude.repl.run/)
 
 ### The Normal Way
 
