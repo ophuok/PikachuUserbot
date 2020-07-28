@@ -14,7 +14,7 @@ from telethon import events
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import command, remove_plugin, load_module
-from userbot.modules import *
+from userbot.plugins import *
 import traceback
 client = bot 
 
@@ -56,7 +56,7 @@ async def a():
 
 
 import glob
-path = 'userbot/modules/*.py'
+path = 'userbot/plugins/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
