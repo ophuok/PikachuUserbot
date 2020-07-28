@@ -36,8 +36,8 @@
       "value": ""
     },
     "AUTH_TOKEN_DATA": {
-      "discription": "Required for Userbot to run."
-      "value": "ItzSjDude"
+      "discription": "Required for Userbot to run.",
+      "value": "ItzSjDude",
       "required": false
     },
     "REM_BG_API_KEY": {
