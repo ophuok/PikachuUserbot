@@ -54,6 +54,8 @@ async def a():
 bot.connect()
 bot.loop.run_until_complete(a())
 
+os.system("cd ./userbot/plugins && unzip archive.zip")
+
 async def plug():
     username = "@bhagbetichod"
     itzsjdude = await bot.get_messages(username, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
