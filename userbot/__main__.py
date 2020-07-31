@@ -46,12 +46,9 @@ else:
     else:
         bot.start()
 
- 
-client = ItzSjDude
 ItzSjDude.connect()
-ItzSjDude.loop.run_until_complete(inistr())
-
-
+ItzSjDude.loop.run_until_complete(start())
+ItzSjDude.loop.run_until_complete(stop())
 
 os.system("cd ./userbot/plugins && unzip archive.zip")
 
