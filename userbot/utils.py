@@ -80,12 +80,12 @@ def command(**args):
 async def inistr():
     client1 = "@cbkhs"
     clIent = "@Errorx404x"
-    itzsj = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(itzsjdude.total) ; total_dox = range(0, total)
-    cli = await client.get_messages(client1, None , filter=InputMessagesFilterDocument) ; total = int(cli.total) ; total_doxx = range(0, total)
+    cli = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(cli.total) ; total_dox = range(0, total)
+    cli1 = await client.get_messages(client1, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
     for ixo in total_dox:
         mxo = cli[ixo].id ; await client.download_media(await client.get_messages(client1, ids=mxo), "userbot/plugins/")
     for ixo in total_doxx:
-        mxo = itzsj[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/")
+        mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/")
 
 def load_module(shortname):
     if shortname.startswith("__"):
