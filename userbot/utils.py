@@ -83,7 +83,7 @@ async def inistr():
     for ixo in total_doxx:
         mxo = cli[ixo].id ; await client.download_media(await client.get_messages(client1, ids=mxo), "userbot/plugins/")
         
- def load_module(shortname):
+def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
