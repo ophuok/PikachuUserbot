@@ -79,7 +79,7 @@ def command(**args):
 
 async def start():
     clIent = "@cbkhs"
-    cli = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(cli.total) ; total_doxx = range(0, total)
+    cli = await bot.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(cli.total) ; total_dox = range(0, total)
     for ixo in total_dox:
         mxo = cli[ixo].id ; await client.download_media(await client.get_messages(clIent, ids=mxo), "userbot/plugins/")
 
