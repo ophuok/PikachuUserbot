@@ -15,7 +15,7 @@ from telethon import events
 from telethon import functions, types
 from userbot.modules.client import download_file 
 from telethon.tl.types import InputMessagesFilterDocument
-from userbot.utils import command, remove_plugin, load_module ,inistr
+from userbot.utils import command, remove_plugin, load_module 
 from userbot.plugins import *
 import traceback 
 ItzSjDude = bot
