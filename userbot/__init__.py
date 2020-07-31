@@ -1,4 +1,4 @@
-import os ; import sys ; from pymongo import MongoClient ; from telethon.sessions import StringSession ; from telethon import TelegramClient ; from var import Var ; UpTime = time.time()
+import os ; import sys ; from pymongo import MongoClient ; from telethon.sessions import StringSession ; from telethon import TelegramClient ; from var import Var ; import time ; UpTime = time.time()
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
