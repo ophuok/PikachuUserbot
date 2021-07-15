@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ItzSjDude/PikachuUserbot/",
+  "repository": "https://github.com/ophuok/PikachuUserbot/",
   "website": "https://ItzSjDude.in",
   "success_url": "#TODO",
   "env": {
@@ -96,6 +96,11 @@
     "CHROME_BIN": {
       "description": "For Carbon.py. Leave as it is. ",
       "value": "/app/.apt/usr/bin/google-chrome",
+      "required": false
+    },
+    "CUSTOM_CMD": {
+      "description": "For changing cmnd handler ",
+      "value": ".",
       "required": false
     },
     "CHROME_DRIVER": {
