@@ -27,7 +27,7 @@ Best User Bot To Manage Your Telegram Account
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/ItzSjDude/PikachuUserbot
+git clone https://github.com/ophuok/PikachuUserbot
 cd PikachuUserbot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
